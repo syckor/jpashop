@@ -25,7 +25,7 @@ public class MemberServiceTest {
     EntityManager em; //이 에러는 무시
 
     @Test
-    @Rollback(false)
+    @Rollback(false)//test의 기본은 rollback이므로 rollback을 못하게 막는다.
     void 회원가입() throws Exception{
         //given
         Member member = new Member();
