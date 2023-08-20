@@ -34,7 +34,7 @@ public class MemberServiceTest {
         //when
         Long savedId = memberService.join(member);
         //then
-        em.flush();
+        em.flush(); //INSERT 문 날리기
         assertEquals(member, memberRepository.findOne(savedId));
     }
 
