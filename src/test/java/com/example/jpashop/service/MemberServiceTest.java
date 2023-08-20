@@ -22,7 +22,7 @@ public class MemberServiceTest {
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
     @Autowired
-    EntityManager em; //이 에러는 제외
+    EntityManager em; //이 에러는 무시
 
     @Test
     @Rollback(false)
